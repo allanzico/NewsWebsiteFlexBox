@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="main-navigation">
+            <li>
+                <Link to="/create" class="link"> <button class="post-ad-button">Post Ad</button> </Link>
+            </li>
+            <li class="list-item">
+                <Link to="/" class="link">Dashboard</Link>
+            </li>
+
+            <li class="list-item">
+                <Link to="/notification" class="link">Notifications</Link>
+            </li>
+            <li class="list-item">
+                <Link to="/" class="link">Something</Link>
+            </li>
+            <li class="logo">
+                <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
+            </li>
+
+            <li>
+                <form>
+                    <input type="text" placeholder="search classifieds" class="search-bar" />
+
+                    <i class="fa fa-search search-icon"></i>
+
+                </form>
+            </li>
+            <li>
+                <Link to="/" class="link">
+                <button class="initials"></button>
+                </Link>
+            </li>
+            <li>
+
+                <button class="logout-button" onClick={props.signOut}>
+                    <i class="fa fa-sign-out" aria-hidden="true">Logout</i></button>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
