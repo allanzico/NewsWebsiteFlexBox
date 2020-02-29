@@ -7,129 +7,180 @@
     <title>The Holy Grail</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/article-page.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
-    <header></header>
-    <div class="main-body">
-        <main class="main-content">
-            <div class="outer">
-                <h1>Headline from a NewsPaper</h1>
-                <article>
-                    <h2>A very important Topic</h2>
-                    <section>
-                        <img src="images/01 - February 2019 (myphotopack.com).jpg" alt="image">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul class="main-navigation">
+                    <li>
+                        <Link to="/create" class="link"> <button class="post-ad-button">Post Ad</button> </Link>
+                    </li>
+                    <li class="list-item">
+                        <Link to="/" class="link">Dashboard</Link>
+                    </li>
+
+                    <li class="list-item">
+                        <Link to="/notification" class="link">Notifications</Link>
+                    </li>
+                    <li class="list-item">
+                        <Link to="/" class="link">Something</Link>
+                    </li>
+                    <li class="logo">
+                        <i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i>
+                    </li>
+
+                    <li>
+                        <form>
+                            <input type="text" placeholder="search classifieds" class="search-bar" />
+
+                            <i class="fa fa-search search-icon"></i>
+
+                        </form>
+                    </li>
+                    <li>
+                        <Link to="/" class="link">
+                        <button class="initials"></button>
+                        </Link>
+                    </li>
+                    <li>
+
+                        <button class="logout-button" onClick={props.signOut}>
+                            <i class="fa fa-sign-out" aria-hidden="true">Logout</i></button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="main-body">
+            <main class="main-content">
+                <div class="outer">
+                    <h1>Headline from a NewsPaper</h1>
+                    <article>
+                        <h2>A very important Topic</h2>
+                        <section>
+                            <img src="images/01 - February 2019 (myphotopack.com).jpg" alt="image">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
 
 
-                        <h3>A sub topic here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
+                            <h3>A sub topic here</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
 
-                    </section>
+                        </section>
 
-                    <h2 class="secondary">More stuff...</h2>
-                    <section>
+                        <h2 class="secondary">More stuff...</h2>
+                        <section>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
 
-                        <h3>Another sub topic here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
+                            <h3>Another sub topic here</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
 
 
 
-                        <p class="span-all">Let's try something different</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
-                        <img src="images/09 - February 2019 (myphotopack.com).jpg" alt="image">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
-                            necessitatibus,
-                            consequuntur
-                            veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores reiciendis
-                            quod
-                            cumque!
-                            Dolores,
-                            vitae.
-                        </p>
-                    </section>
+                            <p class="span-all">Let's try something different</p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
+                            <img src="images/09 - February 2019 (myphotopack.com).jpg" alt="image">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem voluptatem culpa et odit
+                                necessitatibus,
+                                consequuntur
+                                veniam. Saepe rerum recusandae voluptate natus consectetur ea dolor asperiores
+                                reiciendis
+                                quod
+                                cumque!
+                                Dolores,
+                                vitae.
+                            </p>
+                        </section>
 
-                </article>
-            </div>
+                    </article>
+                </div>
 
-        </main>
-        <aside class="advertisement">
-            <h5>ADVERTISEMENTS</h5>
-        </aside>
+            </main>
+            <aside class="advertisement">
+                <h5>ADVERTISEMENTS</h5>
+            </aside>
 
+        </div>
+
+        <footer>
+            <p>FOOTER</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>FOOTER</p>
-    </footer>
 </body>
 
 </html>

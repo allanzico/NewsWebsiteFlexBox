@@ -31,7 +31,11 @@ footer {
 
 
 @media only screen and (min-width: 768px){
-
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
 .main-body {
     flex-direction: row;
     flex: 1;
